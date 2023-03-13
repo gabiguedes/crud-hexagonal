@@ -5,7 +5,7 @@ import (
 	"crud/core/domain"
 )
 
-type UserRepository interface {
+type Persistence interface {
 	Create(ctx context.Context, input *domain.CreateUserInput) (*domain.CreateUserOutput, error)
 	Read(ctx context.Context, input *domain.ReadUserInput) (*domain.ReadUserOutput, error)
 	Update(ctx context.Context, input *domain.UpdateUserInput) (*domain.UpdateUserOutput, error)

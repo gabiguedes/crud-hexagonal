@@ -7,4 +7,5 @@ import (
 
 type CreateQrCode interface {
 	CreateQrInfo(ctx context.Context, input *domain.UserQrCodeInput) (*domain.UserQrCodeOutput, error)
+	Approve(ctx context.Context, input *domain.ApproveInput) (*domain.ApproveOutput, error)
 }
